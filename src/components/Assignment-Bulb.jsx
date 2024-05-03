@@ -6,14 +6,17 @@ const AssignmentBulb = () => {
 
     const toggleButton = () => {
         updateState(!bulbState);
-
     }
     
     return <div>
         <h1>Assignment SubTask 1 - Bulb on/off</h1>
-        <div style={{background: bulbState?"blue":"yellow",height:"100px", width:"100px"}}>
+        <div style={{
+            marginLeft: "326px",
+            background: bulbState?"white":"yellow", 
+            height:"100px", 
+            width:"20%"}}>
         </div>
-        
+
         {bulbState && <button onClick={() => toggleButton()}>Switch-On</button>}
         {!bulbState && <button onClick={() => toggleButton()}>Switch-Off</button>}
     </div>
