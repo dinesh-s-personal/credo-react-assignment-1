@@ -11,7 +11,7 @@ const AssignmentBulb = () => {
     return <div>
         <h1>Assignment SubTask 1 - Bulb on/off</h1>
         <div style={{
-            marginLeft: "326px",
+            marginLeft: "330px",
             background: bulbState?"white":"yellow", 
             height:"100px", 
             width:"20%"}}>

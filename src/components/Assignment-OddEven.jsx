@@ -14,6 +14,6 @@ export const AssignmentOddEven = () => {
 
         <br />
 
-        {count%2 === 0 ? "Number is even" : "Number is odd"}
+        {count%2 === 0 ? "Result: Number is even" : "Result: Number is odd"}
     </div>
 }
