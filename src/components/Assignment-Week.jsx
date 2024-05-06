@@ -13,7 +13,7 @@ export const AssignmentWeek = () => {
             setOutput('Weekday - ' + weekday[value-1]);
         }
         else{
-            setOutput('Enter a valid week number');
+            setOutput('Enter a valid week number'); 
         }
     }
 
