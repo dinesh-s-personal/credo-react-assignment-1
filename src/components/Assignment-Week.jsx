@@ -9,7 +9,12 @@ export const AssignmentWeek = () => {
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     const calcDetails = (value) => {
-        setOutput('Weekday - ' + weekday[value]);
+        if (value >= 1 && value <= 7){
+            setOutput('Weekday - ' + weekday[value-1]);
+        }
+        else{
+            setOutput('Enter a valid week number');
+        }
     }
 
     return <div>
@@ -22,7 +27,7 @@ export const AssignmentWeek = () => {
             e.target.inValue.value = ''; // reset input value
           }}>
 
-            <input id="inValue" name="day" placeholder="Enter a day" type="number"></input>
+            <input id="inValue" name="day" placeholder="Enter a day" min={1} max={7} type="number"></input>
             <br />
             <button type="submit" className="button">Check Details</button>
             <br />
