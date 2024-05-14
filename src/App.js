@@ -3,6 +3,7 @@ import './App.css';
 import AssignmentBulb from './components/Assignment-Bulb';
 import { AssignmentOddEven } from './components/Assignment-OddEven';
 import { AssignmentWeek } from './components/Assignment-Week';
+import { AssignUseEffect } from './components/Assignment-useEffect';
 //import {Workings} from './components/workings';
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <br />
       <br />
       <AssignmentWeek />
+      <br />
+      <br />
+      <AssignUseEffect/>
     </div>
   );
 }
