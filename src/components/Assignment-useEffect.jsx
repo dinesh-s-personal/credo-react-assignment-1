@@ -32,18 +32,18 @@ export const AssignUseEffect = () => {
         <select id="country"
                 name="country"
                 ref={country}>
-                {countryList.map((item, index) => (
-                    <option key={index}>{item}</option> 
-                    ))}
+            {countryList.map((item, index) => (
+                <option key={index}>{item}</option> 
+                ))}
         </select>
         <br></br>
         <label for="state" style={{margin: "5px"}}>State:</label>
         <select id="state"
                 name="state"
                 ref={state}>
-                {stateList.map((item, index) => (
-                    <option key={index}>{item}</option> 
-                    ))}
+            {stateList.map((item, index) => (
+                <option key={index}>{item}</option> 
+                ))}
         </select>
         <br></br>
     </div>
