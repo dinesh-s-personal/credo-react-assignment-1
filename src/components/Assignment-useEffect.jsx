@@ -25,6 +25,7 @@ export const AssignUseEffect = () => {
         {
             setStateList(stateSrilnka);
         }
+        // eslint-disable-next-line
     },[selCountry]);
 
     return <div>
